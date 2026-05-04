@@ -1,12 +1,13 @@
 # 📥 Downloadinaja
 
-Bot Telegram all-in-one untuk menyimpan media **view once** dan **timer** langsung ke Saved Messages. Cukup deploy sekali dengan satu variabel!
+Bot Telegram all-in-one untuk menyimpan media **view once** dan **timer** langsung ke Saved Messages. Multi-user — setiap orang bisa setup akun mereka sendiri!
 
 ## ✨ Fitur
 
+- Multi-user: setiap user punya session & client sendiri
 - Setup session langsung dari chat bot (tanpa coding)
 - Download media view once & timer dengan `.dl`
-- Session tersimpan otomatis, tidak hilang saat restart
+- Session tersimpan otomatis per user, tidak hilang saat restart
 - Support A2F (Two-Factor Authentication)
 
 ## 🚀 Deploy ke Railway
@@ -22,11 +23,12 @@ Bot Telegram all-in-one untuk menyimpan media **view once** dan **timer** langsu
 
 ## 📖 Cara Pakai
 
-Setelah deploy, chat bot kamu di Telegram:
+Setelah deploy, siapapun bisa chat bot dan setup akun mereka sendiri:
 
 1. `/start` — lihat status
 2. `/setup` — ikuti langkah setup (API ID → API HASH → No HP → OTP)
-3. Selesai! Sekarang balas media view once/timer dengan `.dl`
+3. Selesai! Balas media view once/timer dengan `.dl`
+4. Media tersimpan ke **Saved Messages** masing-masing user
 
 ## 📋 Perintah
 
@@ -34,12 +36,13 @@ Setelah deploy, chat bot kamu di Telegram:
 |----------|--------|
 | `/start` | Lihat info & status |
 | `/setup` | Setup session baru |
-| `/status` | Cek status session |
-| `/reset` | Hapus session |
+| `/status` | Cek status session kamu |
+| `/reset` | Hapus session kamu |
 | `/cancel` | Batalkan proses setup |
 
 ## ⚠️ Catatan
 
 - API ID & API HASH didapat dari https://my.telegram.org
+- Setiap user menyimpan session masing-masing secara terpisah
 - Jangan bagikan data session kamu ke siapapun
 - File `session_data.json` otomatis di-ignore git (tidak terupload)
