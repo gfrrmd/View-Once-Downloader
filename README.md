@@ -1,4 +1,4 @@
-# 📥 Downloadinaja
+# 📥 View Once Downloader
 
 Bot Telegram all-in-one untuk menyimpan media **view once** dan **timer** langsung ke Saved Messages. Multi-user — setiap orang bisa setup akun mereka sendiri!
 
